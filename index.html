@@ -1,96 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StepByStep</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">StepByStep</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#features">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
+      <a class="navbar-brand" href="#">StepByStep</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-    <!-- App banner -->
-    <header class="bg-primary text-white text-center py-5">
-        <div class="container">
+    <!-- App header -->
+    <header class="container text-white text-center py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
             <h1>Welcome to StepByStep</h1>
-            <p class="lead">Your guide to self-improvement and unlocking your potential.</p>
-            <a href="#features" class="btn btn-light btn-lg mt-3">Explore Features</a>
+            <p>Your guide to self-improvement and unlocking your potential.</p>
+            <a href="features" class="btn btn-light btn-lg mt-3">Explore Features</a>
+          </div>
         </div>
+      </div>
     </header>
 
     <!-- Features Section -->
-    <section id="features" class="container my-5">
+    <section class="features container">
         <div class="row text-center">
             <div class="col-md-4">
                 <h2>Personalized Plans</h2>
-                <img src="images/Personalised.png" alt="Personalized Plans" class="img-fluid rounded mb-3">
+                <img src="images/Personalised.png" alt="Personalized Plans" class="img-fluid">
                 <p>Get tailored plans to help you achieve your goals, step by step.</p>
             </div>
             <div class="col-md-4">
                 <h2>Daily Motivation</h2>
-                <img src="images/DailyMotivation.webp" alt="Daily Motivation" class="img-fluid rounded mb-3">
+                <img src="images/DailyMotivation.webp" alt="Daily Motivation" class="img-fluid">
                 <p>Stay motivated with daily tips and affirmations designed just for you.</p>
             </div>
             <div class="col-md-4">
                 <h2>Progress Tracking</h2>
-                <img src="images/progess.png" alt="Progress Tracking" class="img-fluid rounded mb-3">
+                <img src="images/progess.png" alt="Progress Tracking" class="img-fluid">
                 <p>Track your journey and celebrate your progress every step of the way.</p>
             </div>
         </div>
     </section>
+    
 
     <!-- About Section -->
-    <section id="about" class="bg-light py-5">
-        <div class="container text-center">
-            <h2>About StepByStep</h2>
-            <p class="lead">StepByStep is your trusted companion for personal growth. Whether you’re looking to build new habits, overcome challenges, or stay focused on your goals, our app is here to guide you every step of the way.</p>
+    <section class="about container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                <h2>About StepByStep</h2>
+                <p class="lead">StepByStep is your trusted companion for personal growth. Whether you’re looking to build new habits, overcome challenges, or stay focused on your goals, our app is here to guide you every step of the way.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container my-5">
+    <section class="contact container">
         <h2 class="text-center mb-4">Contact Us</h2>
         <form>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
                 </div>
             </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            <div class="row">
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </div>
+            </div>
         </form>
     </section>
-    
-<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-<footer class="bg-primary text-white text-center py-3"></footer>
-</body>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <footer class="bg-primary text-white text-center py-3"></footer>
+  </body>
 </html>
